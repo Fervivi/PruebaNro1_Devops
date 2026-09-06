@@ -9,85 +9,89 @@
   <body>
     <main class="page">
       <section class="hero">
-        <div class="hero-content">
-          <span class="badge">GitHub Actions + AWS EC2</span>
-          <h1>Flujo DevOps Automatizado</h1>
-          <p>
-            Esta página demuestra un despliegue automático: cada cambio enviado
-            a la rama principal activa el workflow, copia los archivos al
-            servidor y publica la nueva versión en Apache.
-          </p>
-
-          <div class="actions">
-            <a href="#workflow" class="button primary">Ver flujo</a>
-            <a href="#status" class="button secondary">Estado actual</a>
-          </div>
-        </div>
-
-        <div class="status-card" id="status">
-          <p class="label">Estado del despliegue</p>
-          <h2>Publicado correctamente</h2>
-          <p>
-            Si puedes ver este cambio en el sitio, el workflow completó el
-            proceso de integración y despliegue continuo.
-          </p>
-          <span class="pulse"></span>
-        </div>
-      </section>
-
-      <section class="workflow" id="workflow">
-        <div class="section-title">
-          <span>Pipeline</span>
-          <h2>Del repositorio al servidor</h2>
-        </div>
-
-        <div class="steps">
-          <article class="step">
-            <div class="icon">1</div>
-            <h3>Cambio local</h3>
-            <p>Se modifica el HTML, CSS o JavaScript del proyecto.</p>
-          </article>
-
-          <article class="step">
-            <div class="icon">2</div>
-            <h3>Push a GitHub</h3>
-            <p>Los cambios se suben a la rama <strong>main</strong>.</p>
-          </article>
-
-          <article class="step">
-            <div class="icon">3</div>
-            <h3>GitHub Actions</h3>
-            <p>El workflow prepara la conexión SSH y copia los archivos.</p>
-          </article>
-
-          <article class="step">
-            <div class="icon">4</div>
-            <h3>Servidor EC2</h3>
-            <p>La instancia recibe el sitio dentro de una carpeta temporal.</p>
-          </article>
-
-          <article class="step">
-            <div class="icon">5</div>
-            <h3>Apache</h3>
-            <p>Los archivos se publican en <strong>/var/www/html</strong>.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="summary">
         <div>
-          <h2>Objetivo del proyecto</h2>
+          <span class="badge">Ingeniería DevOps</span>
+          <h1>Mi primer pipeline de despliegue</h1>
           <p>
-            Practicar un flujo DevOps real usando control de versiones,
-            automatización, conexión remota por SSH y despliegue en un servidor
-            web.
+            Sitio estático usado para evidenciar un flujo DevOps con Git,
+            GitHub, GitHub Actions, ramas colaborativas y despliegue automático
+            en EC2.
           </p>
         </div>
 
-        <div class="info-box">
-          <p>Última actualización visible</p>
-          <strong>Versión visual del workflow</strong>
+        <aside class="deploy-card">
+          <span class="status"></span>
+          <p>Estado actual</p>
+          <h2>Despliegue activo</h2>
+          <small
+            >Si ves esta versión publicada, el workflow ejecutó el cambio
+            correctamente.</small
+          >
+        </aside>
+      </section>
+
+      <section class="workflow">
+        <article>
+          <strong>01</strong>
+          <h3>Repositorio Git</h3>
+          <p>
+            El proyecto se versiona en GitHub con ramas main, develop, feature y
+            hotfix.
+          </p>
+        </article>
+
+        <article>
+          <strong>02</strong>
+          <h3>Trabajo colaborativo</h3>
+          <p>
+            Los cambios se integran mediante commits, push y pull requests
+            documentados.
+          </p>
+        </article>
+
+        <article>
+          <strong>03</strong>
+          <h3>GitHub Actions</h3>
+          <p>
+            El workflow automatiza la validación y publicación al detectar
+            nuevos cambios.
+          </p>
+        </article>
+
+        <article>
+          <strong>04</strong>
+          <h3>Servidor EC2</h3>
+          <p>
+            Los archivos se copian por SSH hacia una instancia cloud simulada en
+            AWS.
+          </p>
+        </article>
+
+        <article>
+          <strong>05</strong>
+          <h3>Apache</h3>
+          <p>
+            El sitio queda disponible desde la carpeta pública del servidor web.
+          </p>
+        </article>
+      </section>
+
+      <section class="evidence">
+        <div>
+          <h2>Evidencia del flujo CI/CD</h2>
+          <p>
+            Esta página cambia cada vez que se actualiza el código fuente y se
+            ejecuta el pipeline. Sirve como prueba visual del despliegue
+            continuo.
+          </p>
         </div>
+
+        <ul>
+          <li>Branching: GitFlow o trunk-based documentado.</li>
+          <li>Pull requests para integrar features y hotfixes.</li>
+          <li>Workflow configurado con GitHub Actions.</li>
+          <li>Publicación automática en servidor Apache.</li>
+        </ul>
       </section>
     </main>
   </body>
