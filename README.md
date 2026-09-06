@@ -37,7 +37,7 @@ Para este proyecto se utiliza una estrategia basada en GitFlow, ya que permite s
 Las ramas principales son:
 
 - `main`: contiene la versión estable del proyecto.
-- `develop`: contiene los cambios en desarrollo antes de pasar a producción.
+- `dev`: contiene los cambios en desarrollo antes de pasar a producción.
 - `feature/<nombre>`: se utiliza para desarrollar nuevas funcionalidades.
 - `hotfix/<nombre>`: se utiliza para corregir errores urgentes.
 
@@ -47,12 +47,12 @@ Esta estrategia permite mantener ordenado el flujo de trabajo, revisar cambios a
 
 El flujo de trabajo definido para el proyecto es el siguiente:
 
-1. Crear una rama desde `develop` para trabajar una nueva funcionalidad.
+1. Crear una rama desde `dev` para trabajar una nueva funcionalidad.
 2. Realizar cambios en los archivos del proyecto.
 3. Registrar los cambios mediante commits claros.
 4. Subir la rama al repositorio remoto.
 5. Crear un pull request para revisar e integrar los cambios.
-6. Fusionar los cambios hacia `develop` o `main`, según corresponda.
+6. Fusionar los cambios hacia `dev` o `main`, según corresponda.
 7. Ejecutar el workflow de GitHub Actions para validar o desplegar el proyecto.
 
 ## Convención de nombres de ramas

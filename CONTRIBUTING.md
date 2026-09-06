@@ -7,16 +7,16 @@ Este documento define las buenas prácticas para trabajar en el repositorio y ma
 El proyecto utiliza las siguientes ramas:
 
 - `main`: rama principal y estable.
-- `develop`: rama de desarrollo.
+- `dev`: rama de desarrollo.
 - `feature/<nombre>`: ramas para nuevas funcionalidades.
 - `hotfix/<nombre>`: ramas para correcciones rápidas.
 
 ## Crear una nueva funcionalidad
 
-Para trabajar en una nueva funcionalidad, se debe crear una rama desde `develop`:
+Para trabajar en una nueva funcionalidad, se debe crear una rama desde `dev`:
 
-git checkout develop
-git pull origin develop
+git checkout dev
+git pull origin dev
 git checkout -b feature/nombre-del-cambio
 
 Luego se realizan los cambios necesarios y se registran con commits.
@@ -73,9 +73,9 @@ El pull request debe explicar brevemente:
 
 El flujo recomendado es:
 
-1. Las ramas `feature` se integran hacia `develop`.
-2. La rama `develop` se integra hacia `main` cuando el cambio está listo.
-3. Las ramas `hotfix` se integran hacia `main` y luego se actualiza `develop`.
+1. Las ramas `feature` se integran hacia `dev`.
+2. La rama `dev` se integra hacia `main` cuando el cambio está listo.
+3. Las ramas `hotfix` se integran hacia `main` y luego se actualiza `dev`.
 
 ## Estructura de carpetas
 
