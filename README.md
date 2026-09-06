@@ -109,7 +109,7 @@ Cada cambio visible en la página web sirve como evidencia de que el flujo funci
 
 ## Integrantes
 
-- Felipe Villalobos
+- Fernando Villalobos
 
 ## Licencia
 
